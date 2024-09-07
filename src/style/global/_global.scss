@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+
+// @font-face {
+//     font-family: 'YesevaOne-Regular';
+//     src: local('YesevaOne-Regular'), url(../../../public/assets/font/YesevaOne-Regular.ttf) format('ttf'),
+//         url(../../../public/assets/font/rossanova/Rossanova-Regular.otf) format("oft"),
+//         url(../../../public/assets/font/Yeseva_One/YesevaOne-Regular.ttf) format("ttf"),
+//         url(../../../public/assets/font/ABeeZee/ABeeZee-Regular.ttf) format("ttf"),
+//         url(../../../public/assets/font/Exo_2/Exo2-VariableFont_wght.ttf) format("ttf")
+// }
+
+:root {
+    --max-width: 1100px;
+    --border-radius: 12px;
+    --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+        'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+        'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+    font-family: "ABeeZee", sans-serif;
+
+    // COLORS
+    --accent: #06d455;
+    --accent-light: #7ef9ad;
+    --white: #EBECF3;
+    --black: #131417;
+    --gray: #86868B;
+    --gray-light: #C6C6C6;
+    --gray-super-light: #E6E6E6;
+    --gray-dark: #4E4F56;
+    --gray-super-dark: #33343F;
+    --blue: #2F338E;
+    --blue-light: #656bde;
+    --blue-super-light: #a1a5f6;
+    --blue-dark: #13153d;
+    --red: #f27349;
+    --orange: #db7f28;
+    --green: #3EA45F;
+
+    --bg-ligth-color: #e2eeff;
+    --bg-dark-color: #0C0E37;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-dark-color);
+    color: var(--white);
+    overflow-y: hidden;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+::selection {
+    background: var(--accent-light);
+}

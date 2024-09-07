@@ -1,0 +1,40 @@
+main {
+    padding: 1rem 0;
+    flex: 1;
+    min-height: 100vh;
+}
+
+// FLEX
+.flex-row {
+    display: flex;
+}
+
+.flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-horizontal {
+    align-items: center;
+}
+
+.center-vertical {
+    justify-content: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}

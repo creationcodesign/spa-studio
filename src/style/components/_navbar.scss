@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--white);
+        transition: 0.5s all ease;
+
+        &:hover {
+            color: var(--accent);
+        }
+    }
+
+    a.active {
+        color: var(--blue-light);
+        text-decoration: wavy underline var(--blue-light);
+        text-underline-offset: 0.2rem;
+
+        &:hover {
+            color: var(--accent);
+            text-underline-offset: 0.5rem;
+        }
+    }
+}
