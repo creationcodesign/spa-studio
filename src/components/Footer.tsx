@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="footer-contact">
                 <div className="contact">
                     <span>Phone</span>
-                    <p className="bold-text">0826 93288 28000</p>
+                    <p className="bold-text">0826 9328 2800</p>
                 </div>
 
                 <div className="contact">
