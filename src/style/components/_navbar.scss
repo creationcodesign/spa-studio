@@ -7,7 +7,7 @@ nav {
     a {
         text-decoration: none;
         font-weight: bold;
-        color: var(--white);
+        color: var(--beige-dark);
         transition: 0.5s all ease;
 
         &:hover {
@@ -16,8 +16,8 @@ nav {
     }
 
     a.active {
-        color: var(--blue-light);
-        text-decoration: wavy underline var(--blue-light);
+        color: var(--accent);
+        text-decoration: solid underline var(--accent);
         text-underline-offset: 0.2rem;
 
         &:hover {
@@ -26,3 +26,9 @@ nav {
         }
     }
 }
+
+// a:link,
+// a:visited {
+//     text-decoration: none;
+//     color: var(--black);
+// }
