@@ -1,40 +1,31 @@
 footer {
-    width: 100%;
-    height: 50vh;
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    gap: 1rem;
-    position: relative;
-    color: var(--white);
-    // background-image: url("../../../public/assets/footer.svg");
-    background-image: url("../../assets/footer.svg");
-    background-size: cover;
-    background-position: top;
+    padding: 1.5rem 0;
 
-    .footer-content {
-        margin-top: 5.2rem;
+    .footer-contact {
+        display: flex;
+        place-items: center;
+        gap: 2.5rem;
+        margin: 1.5rem 0;
     }
 
-    .info-text-footer {
-        font-size: 0.9em;
-        font-weight: 300;
-        position: absolute;
-        bottom: 0.2rem;
-        color: var(--blue-dark);
+    .footer-info {
+        display: flex;
+        gap: 1.5rem;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .social {
+        display: flex;
+        gap: 1.5rem;
     }
 }
-
-
 
 @media screen and (max-width: 600px) {
     footer {
         height: 32vh !important;
 
-        .footer-content {
-            margin-top: 3.5rem !important;
-        }
+
     }
 
 }
