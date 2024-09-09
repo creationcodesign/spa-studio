@@ -2,6 +2,7 @@ import Hero from '../components/Hero'
 import Massages from '../components/Massages'
 import Offer from '../components/Offer'
 import OfferSpecial from '../components/OfferSpecial'
+import Testimonials from '../components/Testimonials'
 import Therapists from '../components/Therapists'
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
             <Massages />
             <Therapists />
             <Offer />
+            <Testimonials />
             <OfferSpecial />
         </div>
     )
