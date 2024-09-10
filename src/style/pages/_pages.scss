@@ -45,3 +45,67 @@
         margin-top: -2.3rem;
     }
 }
+
+
+
+// SERVICES PAGE
+.services-page {
+    h1 {
+        margin: 1.5rem 0;
+    }
+
+    .services-list-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 1.5rem 0 2.5rem 0;
+    }
+
+    .services-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-bottom: 0.5rem;
+        cursor: pointer;
+        transition: all 0.9s ease;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            border-radius: 5px;
+            border-top: 1px solid var(--beige);
+
+            .services-title {
+                width: 24rem;
+                padding: 0.8rem 0;
+                text-align: center;
+            }
+
+            .services-img {
+                height: 8rem;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+
+            &:hover {
+                // padding-left: 0.5rem;
+                padding-bottom: 0.5rem;
+                background-color: var(--accent);
+            }
+        }
+    }
+
+    .offer {
+        gap: 0;
+
+        .offer-text {
+            background-color: var(--beige);
+            padding: 1.5rem;
+            border-radius: 0 5px 5px 0;
+        }
+    }
+}
