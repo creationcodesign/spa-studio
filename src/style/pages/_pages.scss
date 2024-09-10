@@ -46,7 +46,59 @@
     }
 }
 
+// THERAPISTS PAGE
+.therapists-page {
+    h1 {
+        margin: 1.5rem 0;
+    }
 
+    .text {
+        width: 55rem;
+    }
+
+    .therapists-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin: 2rem 0 1.5rem 0;
+
+        .therapist-card {
+            width: 33rem;
+            display: flex;
+            gap: 1.5rem;
+            padding: 2rem;
+            border-radius: 5px;
+            background-color: var(--beige);
+
+            .therapist-info {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    margin: 0.5rem 0;
+                    font-size: 1.35em;
+                }
+
+                p {
+                    padding: 0.1rem 0;
+                }
+
+                button {
+                    width: fit-content;
+                    margin: 1.5rem 0;
+                }
+
+                .experince {
+                    color: var(--beige-dark);
+                }
+            }
+
+            img {
+                width: 12rem;
+            }
+        }
+    }
+}
 
 // SERVICES PAGE
 .services-page {
