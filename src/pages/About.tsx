@@ -1,6 +1,7 @@
 import img1 from '../assets/images/about-img-1.png'
 import img2 from '../assets/images/about-img-2.png'
 import img3 from '../assets/images/about-img-3.png'
+import { navigateTo } from '../helper/navigation'
 
 export default function About() {
     return (
@@ -16,15 +17,15 @@ export default function About() {
                         <p>Take a break from the hustle and bustle of city life and treat yourself to the ultimate spa experience at Serenity Spa Studio. </p>
                         <p>Book your appointment today and embark on a path to total relaxation and rejuvenation.</p>
                         <p>Your journey to serenity begins here.</p>
-                        <button className='btn-primary'>
+                        <button className='btn-primary' onClick={() => navigateTo('/appointment')}>
                             make appointment
                         </button>
                     </div>
                     <img src={img3} alt="spa" className='about-img-small' />
                 </div>
                 <div className="about-images">
-                    <img src={img1} alt="spa room" />
-                    <img src={img2} alt="spa" />
+                    <img src={img1} alt="spa room" width={648} />
+                    <img src={img2} alt="spa" width={648} />
                 </div>
             </div>
         </div>

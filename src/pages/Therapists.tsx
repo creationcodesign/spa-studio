@@ -1,4 +1,5 @@
 import therapists from '../data/therapists'
+import { navigateTo } from '../helper/navigation'
 
 export default function Therapists() {
     return (
@@ -14,11 +15,10 @@ export default function Therapists() {
                             <h3>{therapist.name}</h3>
                             <p>{therapist.titleLong}</p>
                             <p className='experince'>{therapist.experince}</p>
-                            <button className='btn-primary'>
+                            <button className='btn-primary' onClick={() => navigateTo('/appointment')}>
                                 make appointment
                             </button>
                         </div>
-
                     </div>
                 ))}
             </div>

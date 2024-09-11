@@ -1,4 +1,5 @@
 import img from '../assets/images/contact-img-spa-room.png'
+import { navigateTo } from '../helper/navigation'
 
 export default function Contact() {
     return (
@@ -13,7 +14,7 @@ export default function Contact() {
                     <p>Send us a message and we'll get back to you shortly!</p>
                 </div>
                 <div className='contact-btn'>
-                    <button className='btn-primary'>
+                    <button className='btn-primary' onClick={() => navigateTo('/appointment')}>
                         make appointment
                     </button>
                     <button className='btn-secondary'>
