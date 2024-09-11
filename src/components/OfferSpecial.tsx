@@ -1,4 +1,5 @@
 import specialOfferImg from '../assets/images/special-offer-img.png'
+import { navigateTo } from '../helper/navigation'
 
 export default function OfferSpecial() {
     return (
@@ -10,9 +11,8 @@ export default function OfferSpecial() {
                     <p className='description'>Hydrating mineral oil and light to moderate pressure  to reduce stress,
                         <br />
                         promote relaxation, improve circulation and stimulate  the nervous system.</p>
-                    <button className='btn-secondary'>
+                    <button className='btn-secondary' onClick={() => navigateTo('/appointment')}>
                         book now
-
                     </button>
                 </div>
                 <span className='small-text'>*Available for females only</span>

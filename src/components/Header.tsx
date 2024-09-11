@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import Navbar from './Navbar'
+import { navigateTo } from '../helper/navigation'
 
 export default function Header() {
     return (
@@ -7,7 +8,7 @@ export default function Header() {
             <NavLink to='/' className='logo-link'>spa</NavLink>
             <div className='header-right'>
                 <Navbar />
-                <button className='header-btn btn-primary'>
+                <button className='header-btn btn-primary' onClick={() => navigateTo('/appointment')}>
                     <span>book now</span>
                 </button>
                 <div className="header-info">

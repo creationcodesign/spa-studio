@@ -1,5 +1,6 @@
 import heroImg from '../assets/images/hero-img.png'
 import Label from '../components/Label'
+import { navigateTo } from '../helper/navigation'
 
 export default function Hero() {
     return (
@@ -16,13 +17,15 @@ export default function Hero() {
                     <p>
                         Whether you seek relief from stress, tension, or simply wish to indulge in some well-deserved pampering, we have the perfect treatment for you.
                     </p>
-                    <button className="btn-primary">
+                    <button className="btn-primary" onClick={() => navigateTo('/appointment')}>
                         make appointment
                     </button>
                 </div>
                 <Label />
             </div>
-            <img src={heroImg} alt="hero-img" />
+            <div className="hero-img-container">
+                <img src={heroImg} alt="hero-img" />
+            </div>
         </div>
     )
 }
