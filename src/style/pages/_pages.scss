@@ -207,3 +207,39 @@
         gap: 1.5rem;
     }
 }
+
+// APPOINTMENT PAGE
+.appointment-page {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        margin: 1.5rem 0;
+    }
+
+    .appointment-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .appointment-form-container {
+        width: 100rem;
+
+        button {
+            width: fit-content;
+            margin: 1.5rem 0;
+            margin-bottom: auto;
+        }
+
+        div {
+            margin-right: 3rem;
+        }
+    }
+
+    .appointment-images {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
