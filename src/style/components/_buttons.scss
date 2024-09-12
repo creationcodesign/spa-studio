@@ -6,10 +6,11 @@ button,
     padding: 0.8rem 1.5rem;
     text-decoration: none;
     font-weight: bold;
+    font-family: "Kodchasan", sans-serif;
     color: var(--beige-super);
     background: none;
-    border: none;
-    border-radius: 18px;
+    border: 2px solid var(--beige-dark);
+    border-radius: 28px;
     outline: none;
     transition: all 0.5s ease;
     cursor: pointer;
@@ -17,17 +18,18 @@ button,
 
 .btn-primary {
     background-color: var(--accent);
-    border-radius: 18px;
-    border: 2px solid var(--accent);
 
     &:hover {
-        border: 2px solid var(--beige);
+        border: 2px solid var(--accent);
     }
 }
 
 .btn-secondary {
     color: var(--beige-dark);
-    background-color: var(--orange);
+
+    &:hover {
+        border: 2px solid var(--accent);
+    }
 }
 
 
