@@ -21,11 +21,18 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     footer {
-        height: 32vh !important;
+        .footer-contact {
+            flex-direction: column;
+            place-items: flex-start;
+            gap: 1.5rem;
+        }
 
-
+        .footer-info {
+            flex-direction: column;
+            place-items: flex-start;
+        }
     }
 
 }
