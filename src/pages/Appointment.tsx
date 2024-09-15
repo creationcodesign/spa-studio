@@ -35,13 +35,6 @@ export default function Appointment() {
         setDataToSend({ ...dataToSend, confirmation: e.target.checked })
     }
 
-    // const handleSubmit = (e: any) => {
-    //     e.preventDefault()
-    //     console.log("SUBMIT dataToSend", dataToSend)
-    // }
-
-    console.log("dataToSend", dataToSend)
-
 
     return (
         <div className="appointment-page">
@@ -49,8 +42,8 @@ export default function Appointment() {
             <div className='appointment-container'>
                 <div className='appointment-form-container'>
                     <form onSubmit={(e) => e.preventDefault()}>
-                        <div className='flex-row'>
-                            <div>
+                        <div className='form-part-1 flex-row'>
+                            <div className='form-inner-part'>
                                 <label htmlFor="name">
                                     Name
                                     <input type="text" placeholder="Max Jonson" id="name" onChange={handleChange} />
@@ -64,7 +57,7 @@ export default function Appointment() {
                                     <input type="phone" placeholder="03890506280" id="phone" onChange={handleChange} />
                                 </label>
                             </div>
-                            <div>
+                            <div className='form-inner-part'>
                                 <label htmlFor="service">
                                     Service
                                     <select name="service" id="service" onChange={handleChange}>
@@ -80,7 +73,7 @@ export default function Appointment() {
                                     </select>
                                 </label>
                             </div>
-                            <div>
+                            <div className='form-inner-part'>
                                 <label htmlFor="date">
                                     Chose Date
                                     <input type="date" id="date" onChange={handleChange} />
@@ -91,7 +84,7 @@ export default function Appointment() {
                                 </label>
                             </div>
                         </div>
-                        <div className='flex-column'>
+                        <div className='form-part-2 flex-column'>
                             <label htmlFor="confirm" className='label-checkbox'>
                                 <input type="checkbox" id="confirm" onChange={handleConfirmationChange} />
                                 <span>
