@@ -51,10 +51,11 @@
         }
 
         .hero-img-container {
-            width: 42rem;
+            width: 132rem;
             border-radius: 5px;
 
             img {
+                width: 100%;
                 object-fit: contain;
                 border-radius: 5px;
             }
@@ -372,6 +373,7 @@
 
         .testimonies {
             flex-direction: column;
+            gap: 3rem !important;
         }
 
         .offer-special {
