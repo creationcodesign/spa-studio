@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# Spa Studio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Spa Studio is a modern, **responsive** website built with **React**, **TypeScript**, and **SCSS**, offering a sleek and user-friendly experience. 
 
-Currently, two official plugins are available:
+The design is fully responsive, ensuring seamless navigation across devices, and the prototype was crafted using Figma for a refined and intuitive layout. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Perfect for showcasing spa services and enhancing user engagement.
 
-## Expanding the ESLint configuration
+### Previews
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+part of home page
 
-- Configure the top-level `parserOptions` property like this:
+<img src="./public/assets/screenshots/spa_studio_home.png" style="border-radius:3px; width:800" />
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+booking page
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+<img src="./public/assets/screenshots/spa_studio_booking_page.png" style="border-radius:3px; width:800" />
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+contact page
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<img src="./public/assets/screenshots/spa_studio_contact.png" style="border-radius:3px; width:800" />
+
+<br/>
+
+<a href="https://artistfolio.onrender.com/" style="color:#BAC67F; font-size:18px">
+live demo
+</a>
