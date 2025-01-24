@@ -43,6 +43,12 @@ form {
             background: var(--white) !important;
             outline-color: var(--beige-dark);
             cursor: pointer;
+            -webkit-appearance: none;
+            /* For WebKit browsers */
+            -moz-appearance: none;
+            /* For Firefox */
+            appearance: none;
+            /* Standard property */
 
             &:checked {
                 background: var(--accent) !important;
@@ -55,13 +61,6 @@ form {
                 text-align: center;
                 font-size: 16px;
             }
-
-            -webkit-appearance: none;
-            /* For WebKit browsers */
-            -moz-appearance: none;
-            /* For Firefox */
-            appearance: none;
-            /* Standard property */
         }
 
         a {

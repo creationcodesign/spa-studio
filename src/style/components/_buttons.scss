@@ -45,6 +45,18 @@ button,
     margin: 1rem 0;
 }
 
+.btn-book {
+    height: fit-content;
+    padding: 0.5rem 1.2rem;
+
+    a {
+        text-decoration: none;
+        font-size: inherit;
+        font-weight: bold;
+        color: inherit;
+    }
+}
+
 .link-more {
     align-self: center;
     gap: 0.5rem;
