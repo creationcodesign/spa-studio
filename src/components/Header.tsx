@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import Navbar from './Navbar'
-import { navigateTo } from '../helper/navigation'
+
 
 export default function Header() {
+    const navigate = useNavigate();
     const [isActive, setIsActive] = useState(false)
     const toggleActive = () => setIsActive(!isActive)
     const closeNavbar = () => setIsActive(false);
@@ -30,7 +31,7 @@ export default function Header() {
             <div className={`header-navbar-container ${isActive ? 'active' : ''}`}>
                 <Navbar closeNavbar={closeNavbar} />
                 <div className='header-info-container'>
-                    <button className='header-btn btn-primary btn-book' onClick={() => navigateTo('/appointment')}>
+                    <button className='header-btn btn-primary btn-book' onClick={() => navigate('/appointment')}>
                         <Link to="/appointment">book now</Link>
                     </button>
                     <div className="header-info">
