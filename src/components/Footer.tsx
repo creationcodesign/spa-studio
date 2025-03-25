@@ -39,7 +39,7 @@ export default function Footer() {
                     <img src={whatsapp} alt="whatsapp" />
                     <img src={youtube} alt="youtube" />
                 </div>
-                <p>all rigths reserved</p>
+                <p>all rights reserved</p>
             </div>
         </footer>
     )
